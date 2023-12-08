@@ -6,17 +6,29 @@ def get_tmp(day):
 def get_inputs(path):
     inputs = []
     with open(path, 'r') as file:
-        inputs = [line for line in file]
-    inputs = [line.strip().split(" -> ") for line in inputs[2:]]
+        inputs = [line.strip() for line in file]
 
+    print(inputs)
     return inputs
 
+    
+def part1(inputs):
+    return 0
+
+
+def part2(inputs):
+    return 0
 
 if __name__ == "__main__":
-    tmp = get_inputs("inputs/day{day}")
+    # tmp = get_inputs("inputs/day{day}")
     tmp = get_inputs("test/test{day}")
 
-    print(tmp)
+    p1 = part1(tmp)
+    print(p1)
+
+    # p2 = part2(tmp)
+    # print(p2)
+
 """
 
 
@@ -38,4 +50,4 @@ def create_day(day):
 
 
 if __name__ == "__main__":
-    create_day(1)
+    create_day(8)
